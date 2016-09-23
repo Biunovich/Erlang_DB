@@ -5,4 +5,5 @@
               {applications,[kernel,stdlib]},
               {mod,{firstapp_app,[]}},
               {env,[]},
-              {modules,[firstapp,firstapp_app,firstapp_db,firstapp_sup]}]}.
+              {modules,[firstapp,firstapp_app,firstapp_client,firstapp_db,
+                        firstapp_sup]}]}.
