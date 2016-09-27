@@ -306,3 +306,61 @@ Eshell V7.3  (abort with ^G)
 
 Crash dump is being written to: erl_crash.dump...done
 Kernel pid terminated (application_controller) ({application_start_failure,firstapp,{{shutdown,{failed_to_start_child,firstapp_db,{{badmatch,{error,eaddrinuse}},[{firstapp_db,init,1,[{file,"src/firs
+
+=====
+===== LOGGING STARTED Tue Sep 27 12:47:44 KRAT 2016
+=====
+Exec: /home/buin/Erlang/firstapp/_rel/firstapp/erts-7.3/bin/erlexec -boot /home/buin/Erlang/firstapp/_rel/firstapp/releases/0.0.1/firstapp -boot_var ERTS_LIB_DIR /home/buin/Erlang/firstapp/_rel/firstapp/erts-7.3/../lib -config /home/buin/Erlang/firstapp/_rel/firstapp/releases/0.0.1/sys.config -args_file /home/buin/Erlang/firstapp/_rel/firstapp/releases/0.0.1/vm.args -- console
+Root: /home/buin/Erlang/firstapp/_rel/firstapp
+/home/buin/Erlang/firstapp/_rel/firstapp
+Erlang/OTP 18 [erts-7.3] [source] [64-bit] [smp:4:4] [async-threads:5] [kernel-poll:true]
+
+1332
+
+=INFO REPORT==== 27-Sep-2016::12:47:44 ===
+    application: firstapp
+    exited: {{shutdown,
+                 {failed_to_start_child,firstapp_db,
+                     {{badmatch,{error,eaddrinuse}},
+                      [{firstapp_db,init,1,
+                           [{file,"src/firstapp_db.erl"},{line,20}]},
+                       {gen_server,init_it,6,
+                           [{file,"gen_server.erl"},{line,328}]},
+                       {proc_lib,init_p_do_apply,3,
+                           [{file,"proc_lib.erl"},{line,240}]}]}}},
+             {firstapp_app,start,[normal,1332]}}
+    type: permanent
+Eshell V7.3  (abort with ^G)
+(firstapp@127.0.0.1)1> {"Kernel pid terminated",application_controller,"{application_start_failure,firstapp,{{shutdown,{failed_to_start_child,firstapp_db,{{badmatch,{error,eaddrinuse}},[{firstapp_db,init,1,[{file,\"src/firstapp_db.erl\"},{line,20}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,240}]}]}}},{firstapp_app,start,[normal,1332]}}}"}
+
+Crash dump is being written to: erl_crash.dump...done
+Kernel pid terminated (application_controller) ({application_start_failure,firstapp,{{shutdown,{failed_to_start_child,firstapp_db,{{badmatch,{error,eaddrinuse}},[{firstapp_db,init,1,[{file,"src/firs
+
+=====
+===== LOGGING STARTED Tue Sep 27 12:47:56 KRAT 2016
+=====
+Exec: /home/buin/Erlang/firstapp/_rel/firstapp/erts-7.3/bin/erlexec -boot /home/buin/Erlang/firstapp/_rel/firstapp/releases/0.0.1/firstapp -boot_var ERTS_LIB_DIR /home/buin/Erlang/firstapp/_rel/firstapp/erts-7.3/../lib -config /home/buin/Erlang/firstapp/_rel/firstapp/releases/0.0.1/sys.config -args_file /home/buin/Erlang/firstapp/_rel/firstapp/releases/0.0.1/vm.args -- console
+Root: /home/buin/Erlang/firstapp/_rel/firstapp
+/home/buin/Erlang/firstapp/_rel/firstapp
+Erlang/OTP 18 [erts-7.3] [source] [64-bit] [smp:4:4] [async-threads:5] [kernel-poll:true]
+
+1332
+
+=INFO REPORT==== 27-Sep-2016::12:47:56 ===
+    application: firstapp
+    exited: {{shutdown,
+                 {failed_to_start_child,firstapp_db,
+                     {{badmatch,{error,eaddrinuse}},
+                      [{firstapp_db,init,1,
+                           [{file,"src/firstapp_db.erl"},{line,20}]},
+                       {gen_server,init_it,6,
+                           [{file,"gen_server.erl"},{line,328}]},
+                       {proc_lib,init_p_do_apply,3,
+                           [{file,"proc_lib.erl"},{line,240}]}]}}},
+             {firstapp_app,start,[normal,1332]}}
+    type: permanent
+Eshell V7.3  (abort with ^G)
+(firstapp@127.0.0.1)1> {"Kernel pid terminated",application_controller,"{application_start_failure,firstapp,{{shutdown,{failed_to_start_child,firstapp_db,{{badmatch,{error,eaddrinuse}},[{firstapp_db,init,1,[{file,\"src/firstapp_db.erl\"},{line,20}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,240}]}]}}},{firstapp_app,start,[normal,1332]}}}"}
+
+Crash dump is being written to: erl_crash.dump...done
+Kernel pid terminated (application_controller) ({application_start_failure,firstapp,{{shutdown,{failed_to_start_child,firstapp_db,{{badmatch,{error,eaddrinuse}},[{firstapp_db,init,1,[{file,"src/firs

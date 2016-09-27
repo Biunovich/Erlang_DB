@@ -1,11 +1,11 @@
 -module(firstapp_db).
 -behaviour (gen_server).
--export([start_link/0, get/1, set/2, init/1, handle_call/3
+-export([start_link/1, get/1, set/2, init/1, handle_call/3
 			,handle_cast/2, handle_info/2, terminate/2, code_change/3, loop/1]).
 
 %% API
 
-start_link() -> gen_server:start_link({local, ?MODULE}, ?MODULE, {}, []).
+start_link(Arg) -> gen_server:start_link({local, ?MODULE}, ?MODULE, Arg, []).
 
 get(Key) -> 
 	gen_server:call(?MODULE, {get, Key}).
@@ -15,8 +15,9 @@ set(Key, Value) ->
 
 %% Callbacks
 
-init(_) ->
-	{ok, Listen} = gen_tcp:listen(1337, [binary, {packet, 4}, {reuseaddr, true}, {active, true}]),
+init(Port) ->
+	io:format("~p~n", [Port]),
+	{ok, Listen} = gen_tcp:listen(Port, [binary, {packet, 4}, {reuseaddr, true}, {active, true}]),
 	spawn(fun() -> par_connect(Listen) end),
 	{ok, ets:new(database, [set])}.
 

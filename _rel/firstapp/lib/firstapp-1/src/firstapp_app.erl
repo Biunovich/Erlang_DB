@@ -10,7 +10,7 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-    firstapp_sup:start_link().
+    firstapp_sup:start_link(_StartArgs).
 
 stop(_State) ->
     ok.
