@@ -1,4 +1,8 @@
 # Erlang_DB
-Compile > rebar compile
+
+
+Compile > rebar compile 
+
 Release > relx release
+
 Start with systemd > put firstapp.service to /etc/systemd/system
