@@ -3,6 +3,8 @@ Description=Firstapp Erlang_DB
 
 [Service]
 ExecStart=/home/buin/Erlang/firstapp/_rel/firstapp/bin/firstapp start
+ExecStop=/home/buin/Erlang/firstapp/_rel/firstapp/bin/firstapp stop
+ExecReload=/home/buin/Erlang/firstapp/_rel/firstapp/bin/firstapp restart
 Type=forking
 Environment='HOME=/home/buin/Erlang/firstapp/_rel/firstapp/'
 
