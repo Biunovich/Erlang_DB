@@ -1,0 +1,10 @@
+[Unit]
+Description=Firstapp Erlang_DB
+
+[Service]
+ExecStart=/home/buin/Erlang/firstapp/_rel/firstapp/bin/firstapp start
+Type=forking
+Environment='HOME=/home/buin/Erlang/firstapp/_rel/firstapp/'
+
+[Install]
+WantedBy=multi-user.target
