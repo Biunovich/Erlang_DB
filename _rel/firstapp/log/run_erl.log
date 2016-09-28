@@ -1,8 +1,0 @@
-run_erl [2821] Wed Sep 28 11:30:25 2016
-Args before exec of shell:
-run_erl [2821] Wed Sep 28 11:30:25 2016
-argv[0] = sh
-run_erl [2821] Wed Sep 28 11:30:25 2016
-argv[1] = -c
-run_erl [2821] Wed Sep 28 11:30:25 2016
-argv[2] = exec "/home/buin/Erlang/firstapp/_rel/firstapp/bin/firstapp" "console"
